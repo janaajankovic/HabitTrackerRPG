@@ -1,35 +1,35 @@
-## Uputstvo za pokretanje aplikacije
+## Getting Started
 
-Da biste pokrenuli projekat lokalno, pratite sledeće korake.
+Follow these steps to run the project locally.
 
-### Preduslovi
+### Prerequisites
 
-* Instaliran **Android Studio** (preporučeno najnovija verzija).
-* **Firebase nalog** (besplatan).
+* **Android Studio** installed (latest version recommended).
+* A **Firebase account** (free).
 
-### 1. Firebase podešavanje (Najvažniji korak)
+### 1. Firebase Setup (Most Important Step)
 
-Aplikacija ne može da radi bez Firebase-a. Potrebno je da je povežete sa vašim Firebase projektom.
+The app cannot run without Firebase. You need to connect it to your own Firebase project.
 
-1.  Idite na [Firebase Console](https://console.firebase.google.com/).
-2.  Kreirajte novi projekat (npr. "HabitTrackerRPG-Test").
-3.  Unutar projekta, kliknite na **"Add app"** i izaberite **Android** ikonicu.
-4.  U polje "Android package name" unesite tačno: **`com.example.habittrackerrpg`**.
-5.  Preuzmite fajl **`google-services.json`** koji će vam Firebase ponuditi.
-6.  Prevucite taj fajl u vaš Android Studio projekat, u folder **`app/`**.
-7.  U Firebase konzoli, u meniju sa leve strane, idite na **Build -> Firestore Database**.
-    * Kliknite na "Create database".
-    * Izaberite **Start in test mode**. Ovo je važno da bi aplikacija mogla da piše u bazu bez komplikovanih pravila.
-8.  U Firebase konzoli, idite na **Build -> Authentication**.
-    * Idite na tab "Sign-in method".
-    * Omogućite (Enable) **Email/Password** kao metodu prijavljivanja.
+1.  Go to the [Firebase Console](https://console.firebase.google.com/).
+2.  Create a new project (e.g. "HabitTrackerRPG-Test").
+3.  Inside the project, click **"Add app"** and select the **Android** icon.
+4.  In the "Android package name" field, enter exactly: **`com.example.habittrackerrpg`**.
+5.  Download the **`google-services.json`** file that Firebase provides.
+6.  Move that file into your Android Studio project, inside the **`app/`** folder.
+7.  In the Firebase Console, open **Build -> Firestore Database** from the left menu.
+    * Click "Create database".
+    * Select **Start in test mode**. This lets the app write to the database without complex security rules.
+8.  In the Firebase Console, go to **Build -> Authentication**.
+    * Open the "Sign-in method" tab.
+    * Enable **Email/Password** as a sign-in method.
 
-### 2. Pokretanje u Android Studiju
+### 2. Running in Android Studio
 
-1.  Otvorite projekat u Android Studiju.
-2.  Sačekajte da Gradle završi sinhronizaciju (može potrajati nekoliko minuta prvi put).
-3.  Povežite fizički Android uređaj (sa uključenim USB Debugging) ili pokrenite emulator.
-4.  Izaberite uređaj u gornjem meniju Android Studija.
-5.  Kliknite na zelenu "Play" ikonicu (▶️ Run 'app').
+1.  Open the project in Android Studio.
+2.  Wait for Gradle to finish syncing (this can take a few minutes the first time).
+3.  Connect a physical Android device (with USB Debugging enabled) or start an emulator.
+4.  Select your device from the top menu in Android Studio.
+5.  Click the green "Play" icon (▶️ Run 'app').
 
-Aplikacija će se instalirati i pokrenuti na vašem uređaju/emulatoru.
+The app will install and launch on your device or emulator.
